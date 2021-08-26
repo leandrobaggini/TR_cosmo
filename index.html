@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/UI/ico_tit.png" type="image/x-icon">
+    <title>Titanes - Experiencia AR</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+    <!--Responsive Mobile First-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--************************ 
+    "ESCENA 1" - MENU PRINCIPAL 
+    ****************************-->
+    <!--Menu principal-->
+    <div class="menuInicio">
+        <div class="fondo"></div>
+    
+        <div class="sombreado"></div>
+    
+        <div class="container UIsup">
+            <div class="d-flex justify-content-center">
+                <img id="logo" class="align-items-center" src="assets/UI/logo.png" alt="Logo titanes en el ring" style="width:70%;">
+            </div>
+            
+            <div class="d-flex justify-content-center">
+                <img class="align-items-center" type="button" id="boton" src="assets/UI/btn_iniciar.png" alt="boton iniciar">
+            </div>
+    
+            <div class="text-center">
+                <h1>¡Explora el nuevo nivel de TITANES EN EL RING! <br>
+                <span>Ahora en REALIDAD AUMENTADA</span></h1>
+            </div>
+        </div>
+    
+        <footer>
+            <div class="logoCosmo">
+                <img src="assets/UI/Logo_Cosmo.png" alt="Logo Cosmo Games">
+            </div>
+            <div class="logoARjs">
+                <img src="assets/UI/logo-arjs.png" alt="Logo Ar.js">
+            </div>
+            <div class="creditos">
+                <img src="./assets/UI/tri_creditos.png" alt="Acceso creditos">
+            </div>
+        </footer>
+    </div>
+
+    <!--**************************** 
+    "ESCENA 2" - SELECTOR PERSONAJES 
+    ********************************-->
+    <!--Selector de personajes-->
+    <section class="selectorP">
+        <div class="fondom2"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div>
+                    <img class="logom2" src="./assets/UI/logo.png" style="width: 30%;">
+                </div>
+                <div class="botonSelector">
+                    <img type="button" id="botonPepi" src="./assets/UI/pepino_recuadro.png">
+                    <img type="button" id="botonCaba" src="./assets/UI/caballero_recuadro.png">
+                    <img type="button" id="botonMomi" src="./assets/UI/momia_recuadro.png">
+                    <img type="button" id="botonMoniN" src="./assets/UI/mnegra_recuadro.png">
+                    <img type="button" id="botonT" src="./assets/UI/t_recuadro.png">
+                    <img type="button" id="botonT1" src="./assets/UI/t_recuadro.png">
+                </div>
+                <div class="personajes">
+                    <div class="pepino">
+                        <img id="pepiSelect" src="./assets/sprites/pepino_01.PNG" alt="pepino">
+                        <img id="txtPepi" src="./assets/UI/text_Pepino.png" alt="pepino texto" style="width: 40%;">
+                    </div>
+                    <div class="caballeroRojo">
+                        <img id="cabaSelect" src="./assets/sprites/caballero_01.PNG" alt="Caballero rojo">
+                        <img id="txtCaballero" src="./assets/UI/textCaballero.png" alt="Caballero rojo texto" style="width: 50%;">
+                    </div>
+                    <div class="momia">
+                        <img id="momiaSelect" src="./assets/sprites/momia_01.PNG" alt="momia" style="width: 70%;">
+                        <img id="txtMomia" src="./assets/UI/text_momia.png" alt="momia texto" style="width: 40%;">
+                    </div>
+                    <div class="momiaN">
+                        <img id="momiNSelect" src="./assets/sprites/momianegra_01.PNG" alt="momia negra" style="width: 50%;">
+                        <img id="txtMomiaN" src="./assets/UI/text_mnegra.png" alt="momia negra texto" style="width: 40%;">
+                    </div>
+                </div>
+ 
+                <div class="d-flex justify-content-center">
+                    <img class="iniciartxt" src="./assets/UI/iniciar_txt.png" style="width: 50%;">
+                    <img type="button" class="UIinfm2 ImagenSelector" id="img_inf" src="./assets/UI/UI_inf_m2.png" alt="UI inferior titanes en el ring">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--************************ 
+    "ESCENA 3" - EXPERIENCIA AR 
+    ****************************-->
+    <!--Inicio Experiencia AR-->
+    <section id="experienciaAR">
+        <div id="iframe">
+            <iframe class="responsive-iframe" src="AR.html" border-color="trasparent"></iframe>
+        </div>
+    </section>
+    
+    <!--Codigo JS Responsive-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
+    <!--Custom JS-->
+    <script src="main.js"></script>
+</body>
+</html>

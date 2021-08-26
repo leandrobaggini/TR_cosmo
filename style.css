@@ -1,0 +1,304 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+h1{
+    margin-top: 40px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+h1 span{
+    font-weight: 700;
+}
+
+#logo{
+    margin-top: 70px;
+}
+
+#boton{
+    margin-top: 270px;
+}
+
+.fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    z-index: 1;
+    background-image: url(./assets/background/fondo.png);
+    background-size: cover;
+}
+
+.sombreado{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.degradado{
+    position: absolute;
+    z-index: 3;
+    bottom: 0px;
+}
+
+.UIsup{
+    position: absolute;
+    z-index: 4;
+}
+
+.logoCosmo{
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    left: 25px;
+    z-index: 4;
+}
+
+.logoARjs{
+    position: absolute;
+    display: flex;
+    bottom: 8px;
+    right: 25px;
+    z-index: 4;
+}
+
+.creditos{
+    position: absolute;
+    display: flex;
+    bottom: 8px;
+    left: 170px;
+    z-index: 4;
+}
+
+#experienciaAR{
+    display: none;
+}
+
+.selector{
+    display: none;
+}
+
+.supUI{
+    position: fixed;
+    top: 0px;
+    right: 50%;
+    transform:translateX(50%);
+    width: 70%;
+    z-index: 4;
+}
+
+.infUI{
+    position: fixed;
+    bottom: 0px;
+    right: 50%;
+    transform:translateX(50%);
+    width: 70%;
+    z-index: 4;
+}
+
+.selectorP{
+    display: none;
+}
+
+.fondom2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-image: url(./assets/background/fondoM2.png);
+    background-size: cover;
+    z-index: 1;
+}
+
+.personajes{
+    position: absolute;
+    z-index: 2;
+    right: center;
+    bottom: -50px;
+}
+
+
+.UIinfm2{
+    position: absolute;
+    z-index: 3;
+}
+
+#img_inf{
+    /*margin-top: 600px;*/
+    width: 98%;
+}
+
+.logom2{
+    position: fixed;
+    z-index: 3;
+    top: 15px;
+    right: 30px;
+}
+
+.textoSelector{
+    display: flex;
+}
+
+.ImagenSelector{
+    display: flex;
+    margin: 650px auto;
+    z-index: 3;
+}   
+
+.botonSelector{
+    z-index: 3;
+}
+
+#botonPepi{
+    position: fixed;
+    left: 17px;
+    top: 300px;
+}
+
+#botonCaba{
+    position: fixed;
+    left: 82px;
+    top: 300px;
+}
+
+#botonMomi{
+    position: fixed;
+    left: 17px;
+    top: 365px;
+}
+
+#botonMoniN{
+    position: fixed;
+    left: 82px;
+    top: 365px;
+}
+
+#botonT{
+    position: fixed;
+    left: 17px;
+    top: 430px;
+}
+
+#botonT1{
+    position: fixed;
+    left: 82px;
+    top: 430px;
+}
+
+#cabaSelect{
+    position: fixed;
+    bottom: 100px;
+    right: 50%;
+    transform:translateX(50%);
+}
+
+#pepiSelect{
+    position: fixed;
+    bottom: 100px;
+    right: 50%;
+    transform:translateX(50%);
+}
+
+#momiaSelect{
+    position: fixed;
+    bottom: 100px;
+    right: 50%;
+    transform:translateX(50%);
+}
+
+#momiNSelect{
+    position: fixed;
+    bottom: 100px;
+    right: 50%;
+    transform:translateX(50%); 
+}
+
+#txtCaballero{
+    position: fixed;
+    left: 17px;
+    top: 520px;
+}
+
+#txtPepi{
+    position: fixed;
+    left: 17px;
+    top: 520px;
+}
+
+#txtMomia{
+    position: fixed;
+    left: 17px;
+    top: 520px;
+}
+
+#txtMomiaN{
+    position: fixed;
+    left: 17px;
+    top: 520px;
+}
+
+.iniciartxt{
+    display: flex;
+    margin: 660px auto;
+    z-index: 4;
+
+}
+
+/*.pepino{
+    display: none;
+}*/
+
+.caballeroRojo{
+    display: none;
+}
+
+.momia{
+    display: none;
+}
+
+.momiaN{
+    display: none;
+}
+
+.iframe{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.responsive-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Medias Qwery*/
+
+@media (min-width: 1400px) {
+    .menuInicio{
+        display: none;
+    }
+ }
+
+ @media (min-width: 1200px) {
+    .menuInicio{
+        display: none;
+    }
+ }
+
+ @media (min-width: 992px) {
+    .menuInicio{
+        display: none;
+    }
+ }
